@@ -1,0 +1,235 @@
+(footprint "BatteryHolder_MYOUNG_BH-21700-B1BJ001_1x21700"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Battery holder, MYOUNG BH-21700-B1BJ001, battery type 1x21700")
+	(tags "horizontal single")
+	(property "Reference" "REF**"
+		(at -39.5 -13.75 0)
+		(layer "F.SilkS")
+		(uuid "9d9055d8-d6c4-4d83-bcaa-7da592a0851e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "BatteryHolder_MYOUNG_BH-21700-B1BJ001_1x21700"
+		(at 0 11.825 0)
+		(layer "F.Fab")
+		(uuid "87e2aceb-6875-437b-92a5-c7cc24001fb0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://item.szlcsc.com/datasheet/BH-21700-B1BJ001/21949508.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5ea48752-2453-4178-bb5b-ae4c6af490e1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "862b98d1-db84-44d4-bb22-9273aacf507b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -41.55 -12.8)
+		(end -41.55 -4.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5712e9e3-f6fc-4f7a-a1eb-f44ea98c0146")
+	)
+	(fp_line
+		(start -41.55 -12.8)
+		(end 41.55 -12.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8c0b05fa-2837-4786-8ed3-1703de4c73e7")
+	)
+	(fp_line
+		(start -41.55 4.8)
+		(end -41.55 12.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3f87aa5b-e673-4f98-bcb1-89cbbbafc9a5")
+	)
+	(fp_line
+		(start -41.55 12.8)
+		(end 41.55 12.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2cb1a5c5-6d96-4751-9332-935943fd32c4")
+	)
+	(fp_line
+		(start 41.55 -12.8)
+		(end 41.55 -4.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1b5acc13-4a0c-496b-b5c2-6abd09224d37")
+	)
+	(fp_line
+		(start 41.55 4.8)
+		(end 41.55 12.8)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ccaaa5e4-95c5-4fc4-afc5-305a6d40ea1a")
+	)
+	(fp_line
+		(start -41.65 -12.75)
+		(end -41.65 12.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8b5a420b-fbe6-4def-ac6b-cbdea4d74dad")
+	)
+	(fp_line
+		(start -41.65 12.75)
+		(end 41.65 12.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9441d78e-af8d-49f5-a8ab-7b8c8b088f65")
+	)
+	(fp_line
+		(start 41.65 -12.75)
+		(end -41.65 -12.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6dfb0757-3360-4e6b-8b0c-563ff87f257f")
+	)
+	(fp_line
+		(start 41.65 12.75)
+		(end 41.65 -12.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "501289cf-9325-4e3f-a6c2-7ce218a8da09")
+	)
+	(fp_rect
+		(start -41.25 -12.5)
+		(end 41.25 12.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "5881c4a6-e83f-48e2-b4a1-d027fdcbe8fd")
+	)
+	(fp_text user "+"
+		(at -43 -6.25 0)
+		(layer "F.SilkS")
+		(uuid "35759a40-b777-4d0f-a7a4-6c34762bc114")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "e1f62ea6-b005-4c5d-b554-a6608b098342")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "+"
+		(at -35 -0.15 0)
+		(layer "F.Fab")
+		(uuid "e86a502a-f461-4ea9-b2b0-e6c3652871cd")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -38.6 -11.5)
+		(size 2.4 2.4)
+		(drill 2.4)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "48a57dac-be1e-448b-9c72-365050a0e33e")
+	)
+	(pad "" np_thru_hole circle
+		(at -34 8.5)
+		(size 3.45 3.45)
+		(drill 3.45)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "7057456d-bd39-42c6-ad11-01d79b460ee8")
+	)
+	(pad "" np_thru_hole circle
+		(at 34 -8.5)
+		(size 3.45 3.45)
+		(drill 3.45)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "920e5fc0-9b31-4893-add3-39b66f21eae1")
+	)
+	(pad "1" smd roundrect
+		(at -43.05 0)
+		(size 7.5 9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.038462)
+		(uuid "f9c56ece-f873-4a62-8a94-9cfa7233b7a1")
+	)
+	(pad "2" smd roundrect
+		(at 43.05 0)
+		(size 7.5 9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.038462)
+		(uuid "334d3705-c211-4db9-bc01-c47b7a33c5ba")
+	)
+	(embedded_fonts no)
+)

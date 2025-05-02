@@ -29,3 +29,9 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# Other files not covered by GitHub's standard KiCad .gitignore
+*.kicad_sch_old
+
+jlcpcb/gerber
+jlcpcb/production_files

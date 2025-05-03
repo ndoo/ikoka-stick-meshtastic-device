@@ -9,7 +9,8 @@ Feature set depends on part selection.
   - 410–493 MHz (433 MHz band) or 850–930 MHz (868/915/923 MHz band)
 - Bluetooth 5 LE
 - Wi-Fi 4 (2.4 GHz)
-- Battery charging
+- Lithium-ion battery with charging
+- 0.96" OLED display
 
 ![top](https://ndoo.github.io/ikoka-stick-meshtastic-device/top.png)
 
@@ -27,10 +28,12 @@ Several options are available depending on the feature set you need.
   - [E22-900M22S](https://www.cdebyte.com/products/E22-900M22S) (850–930 MHz at 22 dBm)
   - [E22-900M30S](https://www.cdebyte.com/products/E22-900M30S) (850–930 MHz at 30 dBm)
   - [E22-900M33S](https://www.cdebyte.com/products/E22-900M33S) (850–930 MHz at 33 dBm)
-- Battery
+- Lithium-ion Battery (4.2V charging termination)
   - 21700 Lithium-ion battery cell (4.2V charge termination; holder: [BeilaMoo PA21700*1-SMT](https://www.beilamoo.com/sdm/1074412/4/pd-5180803/21061576-2986071/ONE_21700_Battery_Holder_with_Surface_Mount_SMT.html)/[MYOUNG BH-21700-B1BJ001](https://jlcpcb.com/partdetail/Myoung-BH_21700B1BJ001/C20606791))
   - Lithium-polymer pouch battery cell (4.2V charge termination; connector: Molex PicoBlade 1x02P, pitch 1.25mm)
   - Do not use both a 21700 and LiPo battery simultaneously, they will be shorted together in parallel
+- 0.96" OLED display
+  - Generic SSD1306 0.96" OLED display modules with 2.54mm pin headers [https://www.aliexpress.com/item/1005008077705181.html]((AliExpress))
 
 ## GPIO Assignment
 

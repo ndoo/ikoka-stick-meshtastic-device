@@ -1,6 +1,8 @@
 name: pcb_image
 on:
   push:
+    branches:
+    - main
 jobs:
   render-image:
     name: render-image

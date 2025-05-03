@@ -1,6 +1,38 @@
 # Ikoka Stick Meshtastic Device
 
-## Pin Definitions
+## Goals and Features
+
+Feature set depends on part selection.
+
+- LoRa
+  - Up to 33 dBm (2 W) output power
+  - 410–493 MHz (433 MHz band) or 850–930 MHz (868/915/923 MHz band)
+- Bluetooth 5 LE
+- Wi-Fi 4 (2.4 GHz)
+- Battery charging
+
+![top](https://ndoo.github.io/ikoka-stick-meshtastic-device/top.png)
+
+## Parts Selection
+
+Several options are available depending on the feature set you need.
+
+- Microcontroller
+  - [Seeed Studio XIAO-nRF52840](https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html) - Bluetooth 5/LE
+  - [Seeed Studio XIAO-ESP32-S3](https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html) - Bluetooth 5/LE and Wi-Fi 4 (2.4 GHz)
+- LoRa Radio
+  - [E22-400M22S](https://www.cdebyte.com/products/E22-400M22S) (410–493 MHz at 22 dBm)
+  - [E22-400M30S](https://www.cdebyte.com/products/E22-400M30S) (410–493 MHz at 30 dBm)
+  - [E22-400M33S](https://www.cdebyte.com/products/E22-400M33S) (410–493 MHz at 33 dBm)
+  - [E22-900M22S](https://www.cdebyte.com/products/E22-900M22S) (850–930 MHz at 22 dBm)
+  - [E22-900M30S](https://www.cdebyte.com/products/E22-900M30S) (850–930 MHz at 30 dBm)
+  - [E22-900M33S](https://www.cdebyte.com/products/E22-900M33S) (850–930 MHz at 33 dBm)
+- Battery
+  - 21700 Lithium-ion battery cell (4.2V charge termination; holder: [BeilaMoo PA21700*1-SMT](https://www.beilamoo.com/sdm/1074412/4/pd-5180803/21061576-2986071/ONE_21700_Battery_Holder_with_Surface_Mount_SMT.html)/[MYOUNG BH-21700-B1BJ001](https://jlcpcb.com/partdetail/Myoung-BH_21700B1BJ001/C20606791))
+  - Lithium-polymer pouch battery cell (4.2V charge termination; connector: Molex PicoBlade 1x02P, pitch 1.25mm)
+  - Do not use both a 21700 and LiPo battery simultaneously, they will be shorted together in parallel
+
+## GPIO Assignment
 
 | XIAO Pin | Function | XIAO-nRF52840 | XIAO-ESP32-S3 |
 |---|---|---|---|
@@ -19,24 +51,19 @@
 | 13 | GND | GND | GND |
 | 14 | NC | 5V | 5V |
 
-## Battery
+### Wiring for Battery Charging
 
-Powered by, and charges, a single 4.2V Lithium-ion battery, with the option of:
+You will need a PicoBlade Female-to-Pigtail cable assembly such as Molex [218112-0200](https://www.molex.com/en-us/products/part-detail/2181120200). A compatible cable ships with Heltec Wireless and LILYGO LoRa products so you probably have spares you can use. [Muzi Works](https://muzi.works/products/battery-cable-molex-picoblade) and [Rokland](https://store.rokland.com/products/battery-connector-cables-battery-wires-jst-1-25-5pcs-for-lilygo-and-heltec) also sell compatible cables.
 
-* 21700 battery (holder: [BeilaMoo PA21700*1-SMT](https://www.beilamoo.com/sdm/1074412/4/pd-5180803/21061576-2986071/ONE_21700_Battery_Holder_with_Surface_Mount_SMT.html)/[MYOUNG BH-21700-B1BJ001](https://jlcpcb.com/partdetail/Myoung-BH_21700B1BJ001/C20606791))
-* LiPo pouch cell (connector: Molex PicoBlade 1X02P, P=1.25mm)
+1. Trim the pigtail length to around 5cm if it is longer
+2. Strip 2mm of insulation from each pigtail, then twist and tin the wire strands
+3. Solder the red pigtail (or pin 1) to the BAT+ pad on the back of the XIAO module
+4. Solder the black pigtail (or pin 2) to the BAT- pad on the back of the XIAO module
+5. Plug the cable into the XIAO Charger connector on the Ikoka Stick
 
-Do not connect a 21700 battery and LiPo battery simultaneously, there is no protection and the batteries will be shorted together in parallel.
+In my previous design, the [Ikoka Nano](https://github.com/ndoo/ikoka-nano-meshtastic-device), the XIAO module was SMD soldered onto the board, while the BAT+ pad was soldered through a plated through-hole via. However, the actual solder joint is buried and couldn't be inspected for continuity, quality and ensuring the BAT+ pad was not shorted to the BAT- pad.
 
-### Charging
-
-Solder a 2-circuit Molex PicoBlade (1.25mm pitch) pigtail to the back of the XIAO module, then plug it into the XIAO connector on the PCB, ensuring correct polarity.
-
-In my previous design, the [Ikoka Nano](https://github.com/ndoo/ikoka-nano-meshtastic-device), I used a plated through-hole pad to solder through to the XIAO-nRF52840's SMD battery pad. However, because the solder joint cannot be inspected, it is hard to tell if the soldered connection was successful or reliably, or worse yet, if the battery pads are shorted together.
-
-I toyed with the idea of doing an internal castellated via in a cutout (similar to modchips), but I decided it was more reliable to make the XIAO module socketable, and solder a Molex PicoBlade 1.25mm pigtail to the XIAO module in order to plug the battery connection into the Ikoka Stick board.
-
-This avoids wasting the charging circuit on the XIAO board, while also making use of the many 1.25mm battery wires I have leftover from Heltec purchases.
+In the interest of ease-of-assembly and keeping the XIAO module interchangeable, while not wasting the built-in battery charging circuit on XIAO modules, this approach was chosen instead.
 
 ## Meshtastic Compatibility
 
@@ -44,27 +71,27 @@ The XIAO module is intended to be socketed with pin headers/pin sockets, to allo
 
 ### XIAO-nRF52840
 
-* EBYTE E22 LoRa
-  * LoRa pins are identical to the officially-supported [Seeed Xiao NRF52840 Kit](https://www.seeedstudio.com/XIAO-nRF52840-Wio-SX1262-Kit-for-Meshtastic-p-6400.html) on [Meshtastic Web Flasher](https://flasher.meshtastic.org/)
-  * LoRa will work out of the box on officially-supported firmware
-  * Special consideration must be taken if using the E22-900M33S module
-    * Set the transmit power to ≤ 9 dBm on first use (when setting the LoRa region)
-    * **Transmit power must never be set greater than 9 dBm** to avoid damaging the module's RF frontend
-* SSD1306 OLED I2C
-  * Pin D6/P1.11 and D7/P1.12 are [reserved for the L76K GPS module in the officially-supported variant](https://github.com/meshtastic/firmware/blob/152b8b1b0235bc461c6e4451fbcdac0987b8bf90/variants/seeed_xiao_nrf52840_kit/variant.h#L137-L138)
-  * A custom firmware must be built to define these pins as I2C (TODO)
-* User button
-  * Pin D0/P0.02 is [reserved for the L76K GPS module in the officially supported variant](https://github.com/meshtastic/firmware/blob/152b8b1b0235bc461c6e4451fbcdac0987b8bf90/variants/seeed_xiao_nrf52840_kit/variant.h#L144)
-  * A custom firmware must be built to define this pin as the user button (TODO)
+- EBYTE E22 LoRa
+  - LoRa pins are identical to the officially-supported [Seeed Xiao NRF52840 Kit](https://www.seeedstudio.com/XIAO-nRF52840-Wio-SX1262-Kit-for-Meshtastic-p-6400.html) on [Meshtastic Web Flasher](https://flasher.meshtastic.org/)
+  - LoRa will work out of the box on officially-supported firmware
+  - Special consideration must be taken if using the E22-900M33S module
+    - Set the transmit power to ≤ 9 dBm on first use (when setting the LoRa region)
+    - **Transmit power must never be set greater than 9 dBm*- to avoid damaging the module's RF frontend
+- SSD1306 OLED I2C
+  - Pin D6/P1.11 and D7/P1.12 are [reserved for the L76K GPS module in the officially-supported variant](https://github.com/meshtastic/firmware/blob/152b8b1b0235bc461c6e4451fbcdac0987b8bf90/variants/seeed_xiao_nrf52840_kit/variant.h#L137-L138)
+  - A custom firmware must be built to define these pins as I2C (TODO)
+- User button
+  - Pin D0/P0.02 is [reserved for the L76K GPS module in the officially supported variant](https://github.com/meshtastic/firmware/blob/152b8b1b0235bc461c6e4451fbcdac0987b8bf90/variants/seeed_xiao_nrf52840_kit/variant.h#L144)
+  - A custom firmware must be built to define this pin as the user button (TODO)
 
 ### XIAO-ESP32-S3
 
-* Pin definitions are different from the officially-supported [Seeed Xiao ESP32-S3 Kit](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html)
-  * This is because Seeed uses GPIOs on the 30-pin board-to-board press-fit connector instead of the standard XIAO pins
-  * A custom firmware must be built (TODO)
+- Pin definitions are different from the officially-supported [Seeed Xiao ESP32-S3 Kit](https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html)
+  - This is because Seeed uses GPIOs on the 30-pin board-to-board press-fit connector instead of the standard XIAO pins
+  - A custom firmware must be built (TODO)
 
-### Images
-![top](https://ndoo.github.io/ikoka-stick-meshtastic-device/top.png)
-![bottom](https://ndoo.github.io/ikoka-stick-meshtastic-device/bottom.png)
-![animation](https://ndoo.github.io/ikoka-stick-meshtastic-device/rotating.gif)
-rendered with [kicad-render](https://github.com/linalinn/kicad-render)
+## More Images
+
+- ![bottom](https://ndoo.github.io/ikoka-stick-meshtastic-device/bottom.png)
+- ![animation](https://ndoo.github.io/ikoka-stick-meshtastic-device/rotating.gif)
+- Rendered with [kicad-render](https://github.com/linalinn/kicad-render).

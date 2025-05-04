@@ -12053,6 +12053,14 @@
 		(uuid "d8ffb744-b99d-4cc1-b112-2b71eba9b9d8")
 	)
 	(segment
+		(start 156.48 111.575)
+		(end 159.02 111.575)
+		(width 0.16)
+		(layer "F.Cu")
+		(net 17)
+		(uuid "9ca34994-286f-4c09-8de4-33335f6b59bd")
+	)
+	(segment
 		(start 188 110.75)
 		(end 187.75 110.5)
 		(width 0.16)

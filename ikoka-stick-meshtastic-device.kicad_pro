@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.51,
-          "width": 2.08
+          "height": 3.45,
+          "width": 3.45
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -501,8 +501,8 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.16,
-        "via_diameter": 0.35,
-        "via_drill": 0.2,
+        "via_diameter": 0.45,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],

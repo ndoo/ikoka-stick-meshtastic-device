@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 3.45,
-          "width": 3.45
+          "height": 1.51,
+          "width": 2.08
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.1
+          "min_clearance": 0.16
         }
       },
       "diff_pair_dimensions": [
@@ -59,26 +59,6 @@
         }
       ],
       "drc_exclusions": [
-        [
-          "copper_edge_clearance|125000000|103500000|cc305649-0987-4a20-b017-a41aac535d34|8e578889-bb88-406f-bf3d-34ed8644da68",
-          ""
-        ],
-        [
-          "copper_edge_clearance|125000000|103500000|cc305649-0987-4a20-b017-a41aac535d34|d28f6d4f-02a1-457b-a008-c5b52e771974",
-          ""
-        ],
-        [
-          "copper_edge_clearance|125000000|95000000|cc305649-0987-4a20-b017-a41aac535d34|54e809ce-34e5-4d28-90a2-4e38203cf1cf",
-          ""
-        ],
-        [
-          "copper_edge_clearance|125000000|95000000|cc305649-0987-4a20-b017-a41aac535d34|8b0ca6b9-fe03-4a2d-b480-753f75207115",
-          ""
-        ],
-        [
-          "copper_edge_clearance|125000000|99250000|cc305649-0987-4a20-b017-a41aac535d34|7607b68c-11ee-47d0-aa52-35198a6e3b25",
-          ""
-        ],
         [
           "courtyards_overlap|219895082|104525000|44fd8d27-ca52-493c-b144-a19089b2c3e8|eb57c595-96fe-4e93-802e-531c180a97f0",
           ""
@@ -160,7 +140,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.1,
+        "min_clearance": 0.16,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.4,
         "min_groove_width": 0.0,
@@ -175,7 +155,7 @@
         "min_through_hole_diameter": 0.15,
         "min_track_width": 0.1,
         "min_via_annular_width": 0.075,
-        "min_via_diameter": 0.25,
+        "min_via_diameter": 0.3,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },

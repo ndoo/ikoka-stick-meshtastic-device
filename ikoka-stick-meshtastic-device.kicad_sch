@@ -5799,7 +5799,7 @@
 		)
 		(uuid "59941e0f-d4da-4d3e-8d5d-a98ac68302b3")
 	)
-	(label "I2C_SDA"
+	(label "I2C_SCL"
 		(at 123.19 172.72 0)
 		(effects
 			(font
@@ -5879,7 +5879,7 @@
 		)
 		(uuid "aaf4923c-8dab-4349-bf02-57a95c93534f")
 	)
-	(label "I2C_SCL"
+	(label "I2C_SDA"
 		(at 53.34 172.72 0)
 		(effects
 			(font

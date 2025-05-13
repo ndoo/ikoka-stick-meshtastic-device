@@ -4210,6 +4210,12 @@
 		(uuid "3d8e4311-cb90-41f2-922f-df0f4e627ff7")
 	)
 	(junction
+		(at 100.33 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "004a7cf3-f0b0-42eb-9d10-11b514dbe6d8")
+	)
+	(junction
 		(at 36.83 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4411,7 +4417,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 115.57) (xy 101.6 115.57)
+			(xy 96.52 115.57) (xy 100.33 115.57)
 		)
 		(stroke
 			(width 0)
@@ -4428,6 +4434,16 @@
 			(type default)
 		)
 		(uuid "17020f19-02a2-4d0a-8625-392baabb353d")
+	)
+	(wire
+		(pts
+			(xy 100.33 105.41) (xy 100.33 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "173c4d60-1a26-4b47-9f31-6e5c584a09d5")
 	)
 	(wire
 		(pts
@@ -4748,6 +4764,16 @@
 			(type default)
 		)
 		(uuid "47adbd2f-0cf9-4ba9-9b57-5366a0d45c14")
+	)
+	(wire
+		(pts
+			(xy 100.33 115.57) (xy 101.6 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d8b045e-4735-45ce-a930-b85af54b306f")
 	)
 	(wire
 		(pts
@@ -5518,6 +5544,16 @@
 			(type default)
 		)
 		(uuid "e4ad5ef8-190f-428c-aef0-87fc08bf47b1")
+	)
+	(wire
+		(pts
+			(xy 100.33 114.3) (xy 100.33 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e674d2a1-28a2-4953-b9fe-b758ca4648bd")
 	)
 	(wire
 		(pts
@@ -8407,6 +8443,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 100.33 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ab87def-bd96-468b-a69e-0cd412019b64")
+		(property "Reference" "#PWR024"
+			(at 100.33 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 100.33 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 100.33 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f2a32813-a34c-4642-99c3-8f071acabc42")
+		)
+		(instances
+			(project "ikoka-stick-meshtastic-device"
+				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 64.77 50.8 0)
 		(unit 1)
@@ -9429,6 +9531,85 @@
 			(project ""
 				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 100.33 110.49 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9180d37-f0bb-4636-83b0-63fcde18ce22")
+		(property "Reference" "R5"
+			(at 97.79 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 97.79 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 102.108 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 100.33 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23024"
+			(at 97.79 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "45f867aa-344a-415e-a01c-da90069b55c9")
+		)
+		(pin "2"
+			(uuid "94ff6b0b-4a0d-44f6-bf86-8fe93301830a")
+		)
+		(instances
+			(project "ikoka-stick-meshtastic-device"
+				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
+					(reference "R5")
 					(unit 1)
 				)
 			)

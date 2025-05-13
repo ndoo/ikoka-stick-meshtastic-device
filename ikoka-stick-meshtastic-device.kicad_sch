@@ -6303,6 +6303,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C15127"
+			(at 48.26 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9942b5a6-43dd-45f4-b8df-f9b460ede7e5")
 		)
@@ -7267,7 +7276,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C23024"
+		(property "LCSC" "C25803"
 			(at 39.37 73.6599 0)
 			(effects
 				(font
@@ -8087,7 +8096,8 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 45.72 25.4 90)
+		(at 45.72 25.4 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9217,7 +9227,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C42379197"
+		(property "LCSC" "C46635840"
 			(at 67.31 113.0299 0)
 			(effects
 				(font
@@ -9591,7 +9601,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C23024"
+		(property "LCSC" "C25803"
 			(at 97.79 109.2199 0)
 			(effects
 				(font
@@ -10341,7 +10351,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C23024"
+		(property "LCSC" "C21190"
 			(at 50.8 73.6599 0)
 			(effects
 				(font

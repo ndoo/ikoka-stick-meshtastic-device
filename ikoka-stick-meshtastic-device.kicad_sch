@@ -4322,8 +4322,22 @@
 		(uuid "b938875f-c21d-4588-a8dd-9582983fd9ee")
 	)
 	(no_connect
+		(at 246.38 149.86)
+		(uuid "ee1b4191-fb6b-4b44-8703-bf002fac53f1")
+	)
+	(no_connect
 		(at 246.38 121.92)
 		(uuid "f856961d-e20f-43d0-bf0a-92f482a7a4df")
+	)
+	(wire
+		(pts
+			(xy 246.38 148.59) (xy 246.38 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00cf4544-15a7-4d7d-bda7-a74a0eca97d0")
 	)
 	(wire
 		(pts
@@ -4547,6 +4561,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 143.51) (xy 240.03 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "246e662b-7b61-40b8-beb8-410249e35d42")
+	)
+	(wire
+		(pts
 			(xy 63.5 25.4) (xy 64.77 25.4)
 		)
 		(stroke
@@ -4574,6 +4598,16 @@
 			(type default)
 		)
 		(uuid "278f2e40-daaa-405c-bd03-8f5914aa8784")
+	)
+	(wire
+		(pts
+			(xy 240.03 140.97) (xy 241.3 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29eb4ca6-0350-40d4-a532-ae58a06dccde")
 	)
 	(wire
 		(pts
@@ -5157,6 +5191,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 143.51) (xy 240.03 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "917051e8-e207-481f-bdea-6b17889056f9")
+	)
+	(wire
+		(pts
 			(xy 118.11 176.53) (xy 121.92 176.53)
 		)
 		(stroke
@@ -5404,6 +5448,16 @@
 			(type default)
 		)
 		(uuid "c1e54bf7-21d2-4f4b-a685-5690b279b180")
+	)
+	(wire
+		(pts
+			(xy 240.03 140.97) (xy 240.03 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c537f523-c1a1-4685-9255-e8a451202ad1")
 	)
 	(wire
 		(pts
@@ -6034,6 +6088,72 @@
 			(justify left bottom)
 		)
 		(uuid "ece8f280-af67-498c-95db-edbd34fed196")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 240.03 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0363f28d-853f-4d80-b829-1f0be6c42052")
+		(property "Reference" "#PWR028"
+			(at 240.03 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5de907cc-9c1c-4e9d-a8c8-032a3c8051a8")
+		)
+		(instances
+			(project "ikoka-stick-meshtastic-device"
+				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -6847,6 +6967,72 @@
 			(project "ikoka-stick-meshtastic-device"
 				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 240.03 135.89 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "310bdb7c-2798-4c64-b953-a4d061055ab4")
+		(property "Reference" "#PWR027"
+			(at 240.03 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 240.03 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 240.03 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "090037d3-238a-48ed-badb-ae1f149b1a54")
+		)
+		(instances
+			(project "ikoka-stick-meshtastic-device"
+				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -8315,6 +8501,88 @@
 			(project ""
 				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
 					(reference "#FLG06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin")
+		(at 246.38 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "71f06fa6-ad4c-4413-bd5e-27b6833e7ed0")
+		(property "Reference" "J7"
+			(at 248.92 141.3255 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 248.92 143.8655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Molex:Molex_PicoBlade_53261-0271_1x02-1MP_P1.25mm_Horizontal"
+			(at 246.38 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 246.38 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2905009"
+			(at 248.92 141.3255 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ee08cc2-763f-4dbd-89d6-f1ec0cba8867")
+		)
+		(pin "2"
+			(uuid "ffce0b2a-ba3b-4ab4-bd22-722ee3ff6d15")
+		)
+		(pin "MP"
+			(uuid "e2691ab1-5ec0-4432-9b8a-5cce0b1a1d8c")
+		)
+		(instances
+			(project "ikoka-stick-meshtastic-device"
+				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
+					(reference "J7")
 					(unit 1)
 				)
 			)

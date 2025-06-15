@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "E22-900M30S")(type "KiCad")(uri "${KIPRJMOD}/libraries/E22-900M30S/E22-900M30S.kicad_sym")(options "")(descr ""))
   (lib (name "Seeed_Studio_XIAO_Series")(type "KiCad")(uri "${KIPRJMOD}/libraries/OPL_Kicad_Library/Seeed Studio XIAO Series Library/Seeed_Studio_XIAO_Series.kicad_sym")(options "")(descr ""))
+  (lib (name "RF_NiceRF_LoRa")(type "KiCad")(uri "${KIPRJMOD}/symbols/RF_NiceRF_LoRa.kicad_sym")(options "")(descr ""))
 )

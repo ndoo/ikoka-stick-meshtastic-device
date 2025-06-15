@@ -1,3 +1,6 @@
 [submodule "libraries/OPL_Kicad_Library"]
 	path = libraries/OPL_Kicad_Library
 	url = https://github.com/Seeed-Studio/OPL_Kicad_Library.git
+[submodule "libraries/KiCAD_libralies"]
+	path = libraries/KiCAD_libralies
+	url = https://github.com/paripalpp/KiCAD_libralies.git

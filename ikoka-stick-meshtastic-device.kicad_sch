@@ -931,183 +931,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Battery_Cell"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "BT"
-				(at 2.54 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Battery_Cell"
-				(at 2.54 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 1.524 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 1.524 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Single-cell battery"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "battery cell"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Battery_Cell_0_1"
-				(rectangle
-					(start -2.286 1.778)
-					(end 2.286 1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.524 1.016)
-					(end 1.524 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.778) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 3.048) (xy 1.778 3.048)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 3.556) (xy 1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Battery_Cell_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -4210,6 +4033,12 @@
 		(uuid "3d8e4311-cb90-41f2-922f-df0f4e627ff7")
 	)
 	(junction
+		(at 218.44 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1540bd24-da77-45d4-abab-b54acfdf1f15")
+	)
+	(junction
 		(at 36.83 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4222,16 +4051,16 @@
 		(uuid "2157fe4f-a84e-45cd-8a81-3d0e4cc66ce3")
 	)
 	(junction
+		(at 218.44 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4269fb28-381b-4dcb-8194-7788ab0fc7bf")
+	)
+	(junction
 		(at 273.05 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "430b1299-948c-4094-941d-55ec81988658")
-	)
-	(junction
-		(at 210.82 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4536f5e6-70b4-40d1-92c5-83167bdc6b1e")
 	)
 	(junction
 		(at 36.83 25.4)
@@ -4268,12 +4097,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a578461b-8e90-4c59-9ae3-5cbad180ac61")
-	)
-	(junction
-		(at 210.82 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a9a1ccd0-a052-45a7-96fb-651502b1062d")
 	)
 	(junction
 		(at 74.93 25.4)
@@ -4791,7 +4614,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 107.95) (xy 201.93 109.22)
+			(xy 201.93 107.95) (xy 201.93 113.03)
 		)
 		(stroke
 			(width 0)
@@ -4801,23 +4624,13 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 109.22) (xy 210.82 110.49)
+			(xy 162.56 114.3) (xy 162.56 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5cde93c0-68d1-4d35-abd4-252302ac04a5")
-	)
-	(wire
-		(pts
-			(xy 210.82 120.65) (xy 210.82 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e8566ff-be9d-473d-b014-93b9d9ca22ac")
+		(uuid "5ab78d97-ea91-425a-acb6-d49becc1dd5c")
 	)
 	(wire
 		(pts
@@ -5001,16 +4814,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 113.03) (xy 218.44 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "818acc5d-7e2c-4b17-899f-28d510863d68")
-	)
-	(wire
-		(pts
 			(xy 119.38 167.64) (xy 138.43 167.64)
 		)
 		(stroke
@@ -5078,16 +4881,6 @@
 			(type default)
 		)
 		(uuid "86fae2a5-aebe-4a83-9aca-9c7876b56865")
-	)
-	(wire
-		(pts
-			(xy 210.82 118.11) (xy 210.82 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89fa64a2-aff2-47cc-aa45-efe0af02cb9d")
 	)
 	(wire
 		(pts
@@ -5291,6 +5084,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 107.95) (xy 218.44 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1f40d56-8958-49ac-86f3-fc1876879b60")
+	)
+	(wire
+		(pts
 			(xy 261.62 45.72) (xy 261.62 46.99)
 		)
 		(stroke
@@ -5321,7 +5124,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 119.38) (xy 210.82 119.38)
+			(xy 191.77 115.57) (xy 218.44 115.57)
 		)
 		(stroke
 			(width 0)
@@ -5401,7 +5204,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 109.22) (xy 210.82 109.22)
+			(xy 201.93 113.03) (xy 218.44 113.03)
 		)
 		(stroke
 			(width 0)
@@ -5481,13 +5284,13 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 107.95) (xy 210.82 109.22)
+			(xy 154.94 114.3) (xy 154.94 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dd83066d-82cc-46a3-8dc6-3bcf42cf1a92")
+		(uuid "e2ef5112-697b-4735-8ab7-8a9b740e7278")
 	)
 	(wire
 		(pts
@@ -5691,7 +5494,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 107.95) (xy 191.77 119.38)
+			(xy 191.77 107.95) (xy 191.77 115.57)
 		)
 		(stroke
 			(width 0)
@@ -7019,6 +6822,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 162.56 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38f87e77-8435-48c2-91dd-50de528c8328")
+		(property "Reference" "#PWR027"
+			(at 162.56 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 162.56 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94f23cb5-d23e-4d9c-be81-995a5a1fb9dc")
+		)
+		(instances
+			(project "ikoka-stick-meshtastic-device"
+				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 74.93 24.13 0)
 		(unit 1)
@@ -7079,6 +6948,73 @@
 			(project "ikoka-stick-meshtastic-device"
 				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
 					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 162.56 110.49 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b247591-54e3-40ae-9ced-73e8e76c1baa")
+		(property "Reference" "H4"
+			(at 165.1 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 165.1 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+			(at 162.56 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 162.56 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "981551fd-f8a7-486f-8b12-e2b774b6c03c")
+		)
+		(instances
+			(project "ikoka-stick-meshtastic-device"
+				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -7250,72 +7186,6 @@
 			(project "ikoka-stick-meshtastic-device"
 				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 210.82 107.95 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "50110bbc-967a-4d2a-b06a-602568b030b3")
-		(property "Reference" "#PWR09"
-			(at 210.82 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 210.82 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.82 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 210.82 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "28669b76-d2a2-4c4c-bb01-19ec0d66797f")
-		)
-		(instances
-			(project "ikoka-stick-meshtastic-device"
-				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -7971,85 +7841,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Battery_Cell")
-		(at 210.82 115.57 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6ae87a1c-26cb-4b3c-b026-cb4779c406bc")
-		(property "Reference" "BT1"
-			(at 207.01 112.4584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Battery_Cell"
-			(at 207.01 114.9984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Battery 21700:BatteryHolder_MYOUNG_BH-21700-B1BJ001_1x21700"
-			(at 210.82 114.046 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 210.82 114.046 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single-cell battery"
-			(at 210.82 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C20606791"
-			(at 207.01 112.4584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "967b32f1-0543-4acb-964b-6e2563d91c85")
-		)
-		(pin "2"
-			(uuid "cef1d321-6573-4190-98fc-d784a4e611c2")
-		)
-		(instances
-			(project ""
-				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
-					(reference "BT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
 		(at 45.72 25.4 90)
 		(unit 1)
@@ -8672,6 +8463,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 154.94 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a28c6356-e99b-4f13-b723-8d4370372281")
+		(property "Reference" "#PWR024"
+			(at 154.94 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 154.94 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 154.94 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07e564a7-02f4-40c1-b376-5f19170d2c65")
+		)
+		(instances
+			(project "ikoka-stick-meshtastic-device"
+				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 218.44 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8810,72 +8667,6 @@
 			(project ""
 				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 210.82 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aae5c15e-38c3-4433-afed-d09c38d449eb")
-		(property "Reference" "#PWR010"
-			(at 210.82 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 210.82 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.82 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 210.82 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3a4a3eab-79c0-4d3b-b281-d45557e1f84d")
-		)
-		(instances
-			(project "ikoka-stick-meshtastic-device"
-				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
-					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -9088,7 +8879,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical_SMD_Pin1Right"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
 			(at 64.77 113.03 0)
 			(effects
 				(font
@@ -9831,6 +9622,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 154.94 110.49 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9fcd867-a807-4f0b-82ef-20f2bbc364e4")
+		(property "Reference" "H3"
+			(at 157.48 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 157.48 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad_Via"
+			(at 154.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 154.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 154.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6c81654-27e6-44c1-b6b7-95a0d03534cd")
+		)
+		(instances
+			(project "ikoka-stick-meshtastic-device"
+				(path "/d817f34c-2aa5-4c70-878b-29719eb987fe"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 121.92 151.13 0)
 		(unit 1)
@@ -9922,7 +9780,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+		(property "Footprint" "Button_Switch_additional:TS-1088-AR02016"
 			(at 106.68 110.49 0)
 			(effects
 				(font

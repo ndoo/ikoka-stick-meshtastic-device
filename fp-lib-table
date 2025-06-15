@@ -3,4 +3,5 @@
   (lib (name "E22-900M30S")(type "KiCad")(uri "${KIPRJMOD}/libraries/E22-900M30S")(options "")(descr ""))
   (lib (name "Seeed Studio XIAO Series Library")(type "KiCad")(uri "${KIPRJMOD}/libraries/OPL_Kicad_Library/Seeed Studio XIAO Series Library")(options "")(descr ""))
   (lib (name "Battery 21700")(type "KiCad")(uri "${KIPRJMOD}/libraries/Battery 21700")(options "")(descr ""))
+  (lib (name "Button_Switch_additional")(type "KiCad")(uri "${KIPRJMOD}/libraries/KiCAD_libralies/footprints/Button_Switch_additional.pretty")(options "")(descr ""))
 )

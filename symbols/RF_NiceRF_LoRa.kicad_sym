@@ -24,7 +24,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "RF_NiceRF_LoRa:LoRa126XF30"
 			(at 1.27 -31.75 0)
 			(effects
 				(font
@@ -210,24 +210,6 @@
 				)
 			)
 			(pin power_in line
-				(at -1.27 -17.78 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at 0 17.78 270)
 				(length 2.54)
 				(name "VCC"
@@ -246,7 +228,7 @@
 				)
 			)
 			(pin power_in line
-				(at 1.27 -17.78 90)
+				(at 0 -17.78 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -255,7 +237,7 @@
 						)
 					)
 				)
-				(number "15"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -274,6 +256,24 @@
 					)
 				)
 				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 15.24 7.62 180)
+				(length 2.54)
+				(name "ANT_GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
